@@ -82,12 +82,10 @@ for(let val of price2){
     i++; 
 }
 
-
 // Arrays Methods: 
 console.log("----------Arrays Method--------");
 
 // Push()   : to add something at the end of arrays: change in original Arrays
-
 let food = ["Google", "Microsoft", "Facebook", "Apple"];
 console.log("Before Push(): ");
 console.log(food);
