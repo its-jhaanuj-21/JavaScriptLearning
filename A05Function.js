@@ -244,9 +244,9 @@ console.log(newarr);
 let sum2 = newarr.reduce((prev, curr)=>{
   return prev+curr;
 })
-console.log(sum2)
+console.log("Sum: ",sum2)
 
 let product = newarr.reduce((prev, curr)=>{
   return prev*curr;
 })
-console.log(product);
+console.log("Factorial :",product);
