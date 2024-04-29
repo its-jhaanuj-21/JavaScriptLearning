@@ -91,7 +91,7 @@ heading1.innerHTML = "<i> New Heading </i>"
 let h2 = document.querySelector("h2");
 console.dir(h2.innerText); // it will not print coz h2 is hidden 
 console.dir(h2.innerHTML)
-console.dir(h2.textContent)  // it will show hidden text as well 
+console.dir(h2.textContent)  // it will show hidden text as well  
 
 
 
