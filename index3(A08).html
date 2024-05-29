@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            color: black;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--Inline Event Handling-->
+    <button onclick="console.log('Button Was clicked'); alert('Hello')">
+        Click Me!!
+    </button>
+
+    <button ondblclick="console.log('Button was clicked 2x'); alert('kkkk')">
+        Click Me 2x 
+    </button>
+
+    <div onmouseover="console.log('Inside Div')">
+        Div
+    </div>
+
+
+    <!--Inside JS file Event Handling-->
+<br>
+    <button id="btn1">
+        Event Handling Button
+    </button>
+
+    <br>
+
+    <div id="Div2">
+        Hover Mouse Inside Div
+    </div>
+
+
+    <!--For Event object -->
+
+    <br>
+    <button id="btn3">
+        Event Objects
+    </button>
+
+
+    <!--EventListeners-->
+
+    <br>
+    <button id="btn4">
+        --EventListeners--
+    </button>
+
+    <br>
+
+    <button id="btn5">
+        --EventListeners--
+    </button>
+
+
+
+    <script src="A08Events.js"></script>
+</body>
+</html>
