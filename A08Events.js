@@ -42,3 +42,59 @@ btn4.addEventListener("click", (e) => {
     console.log(e.target);
 });
 
+
+// Removing Event Listener
+
+let btn5 = document.querySelector("#btn5");
+
+let event1 = () => {
+    console.log("Click -- event1");
+}
+let event2 = () => {
+    console.log("Click -- event2");
+}
+let event3 = () => {
+    console.log("Click -- event3");
+}
+
+btn5.addEventListener("click", event1);
+btn5.addEventListener("click", event2);
+btn5.addEventListener("click", event3);
+
+btn5.removeEventListener("click", event2);
+
+
+// Question to chnage the mode of the screen
+let modebtn = document.querySelector("#modebtn");
+let mode = "light";
+let clickToChangeMode = () =>{
+    let body = document.querySelector("body");
+    if(mode === "light"){
+        body.style.backgroundColor = "Black";
+        mode = "dark";
+    }else if (mode === "dark"){
+        body.style.backgroundColor = "White";
+        mode = "light";
+    }
+}
+modebtn.addEventListener("click", clickToChangeMode)
+
+
+// Question to chnage the mode of the screen by css class
+let modebtn2 = document.querySelector("#modebtn2");
+let body = document.querySelector("body");
+let currmode = "light";
+
+modebtn2.addEventListener("click", () =>{
+    if(currmode === "light"){
+        console.log(currmode);
+        body.classList.add("dark")
+        body.classList.remove("light");
+        currmode = "dark";
+    }else if (currmode === "dark"){
+        console.log(currmode);
+        body.classList.add("light")
+        body.classList.remove("dark");
+        currmode = "light";
+    }
+})
