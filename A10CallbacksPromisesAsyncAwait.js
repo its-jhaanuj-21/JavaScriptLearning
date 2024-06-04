@@ -67,3 +67,20 @@ calculator(2,3, (a,b)=>{
  * This style of programming becomes difficult to understand and manage.
  */
 
+function getData(dataId ){
+    console.log("Data : ",dataId);
+}
+
+function getData2(dataId){
+    setTimeout(()=>{
+        console.log("Data: ",dataId)
+    }, 3000)
+}
+
+// here we will get all the three data after 6 sec:
+getData2(1)
+getData2(2)
+getData2(3)
+
+// here data will featch sequentially one after another: 
+
