@@ -84,3 +84,20 @@ getData2(3)
 
 // here data will featch sequentially one after another: 
 
+function getData3(dataId, getNextData){
+    setTimeout(()=>{
+        console.log("Data: ", dataId);
+        if(getNextData){
+            getNextData();
+        }
+    },3000)
+}
+
+getData3(100, ()=>{
+    getData3(200, ()=>{
+        getData3(300, ()=>{     // CALLBACK HELL
+            getData3(400)
+        })
+    })
+})
+
